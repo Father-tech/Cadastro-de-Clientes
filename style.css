@@ -1,0 +1,146 @@
+/* Configurações Gerais de Reset e Fonte */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f7f9fa;
+    color: #333;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #222;
+}
+
+/* Caixa que segura os botões de topo */
+.container-botoes {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 20px 0;
+}
+
+/* Botões Padrão do Sistema */
+.btn-add {
+    display: inline-block;
+    width: 200px;
+    padding: 12px;
+    background: #28a745;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    text-align: center;
+    font-weight: 600;
+    transition: background 0.3s, transform 0.1s;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-add:hover {
+    background: #218838;
+}
+
+.btn-add:active {
+    transform: scale(0.98);
+}
+
+.btn-filtro {
+    background: #007bff;
+}
+
+.btn-filtro:hover {
+    background: #0069d9;
+}
+
+.btn-voltar {
+    background: #6c757d;
+}
+
+.btn-voltar:hover {
+    background: #5a6268;
+}
+
+/* Estilização das Tabelas (Lista de Clientes) */
+table {
+    width: 90%;
+    max-width: 1200px;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+th, td {
+    padding: 14px;
+    text-align: center;
+    border-bottom: 1px solid #eef2f3;
+}
+
+th {
+    background-color: #f1f3f5;
+    color: #495057;
+    font-weight: 600;
+}
+
+tr:hover {
+    background-color: #f8f9fa;
+}
+
+/* Links de Ação (Editar e Excluir) */
+td a {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: 500;
+}
+
+td a:hover {
+    text-decoration: underline;
+}
+
+td a[href*="excluir"] {
+    color: #dc3545;
+}
+
+/* Estilo para as outras páginas: Formulários (Add, Editar, Filtrar) */
+.form-container {
+    background: white;
+    max-width: 500px;
+    margin: 30px auto;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: 600;
+    color: #495057;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    font-size: 14px;
+    transition: border-color 0.15s ease-in-out;
+}
+
+.form-group input:focus {
+    outline: none;
+    border-color: #80bdff;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
